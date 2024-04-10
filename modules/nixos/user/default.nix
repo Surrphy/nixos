@@ -22,6 +22,11 @@ in {
 	description = ''Full name'';
     };
 
+    email = mkOption {
+        default = "mainuser@example.com";
+	description = ''User's email'';
+    };
+
   };
 
   config = mkIf cfg.enable {

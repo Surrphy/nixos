@@ -17,7 +17,7 @@
     # The name "snowfall-lib" is required due to how Snowfall Lib processes your
     # flake's inputs.
     snowfall-lib = {
-        url = "github:snowfallorg/lib";
+        url = "github:snowfallorg/lib/dev";
         inputs.nixpkgs.follows = "nixpkgs";
     };
   };

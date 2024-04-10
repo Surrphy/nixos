@@ -18,6 +18,12 @@ with lib.minuszero; {
       enable = true;
       userName = "surrphy";
       fullName = "Konrad Kine";
+      email = "konrad.kine@tutanota.com";
+    };
+
+    tools = {
+      k8s.enable = true;
+      git.enable = true;
     };
   };
 
