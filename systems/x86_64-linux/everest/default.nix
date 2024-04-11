@@ -31,6 +31,10 @@ with lib.minuszero; {
       locale.enable = true;
       time.enable = true;
     };
+
+    desktop.qtile = {
+      enable = true;
+    };
   };
 
   # This value determines the NixOS release from which the default

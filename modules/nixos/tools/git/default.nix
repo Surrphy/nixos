@@ -18,9 +18,9 @@ in
 
     minuszero.home.extraOptions = {
       programs.git = {
+        enable = true;
         inherit(cfg) userName userEmail;
 
-        enable = true;
         lfs.enable = true;
 
         extraConfig = {
