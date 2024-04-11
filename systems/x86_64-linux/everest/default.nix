@@ -25,6 +25,12 @@ with lib.minuszero; {
       k8s.enable = true;
       git.enable = true;
     };
+
+    system = {
+      fonts.enable = true;
+      locale.enable = true;
+      time.enable = true;
+    };
   };
 
   # This value determines the NixOS release from which the default
