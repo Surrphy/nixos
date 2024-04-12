@@ -35,6 +35,7 @@ with lib.minuszero; {
     hardware = {
       networking.enable = true;
       audio.enable = true;
+      graphics.nvidia.enable = true;
     };
 
     security = {

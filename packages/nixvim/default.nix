@@ -25,6 +25,10 @@ nixvim.makeNixvimWithModule {
     config = {
       minuszero.plugins = {
         lsp = enabled;
+        lualine = enabled;
+        gitblame = enabled;
+        telescope = enabled;
+        treesitter = enabled;
       };
 
       plugins = {
@@ -44,7 +48,7 @@ nixvim.makeNixvimWithModule {
 
       colorschemes.catppuccin = {
         enable = true;
-	flavour = "mocha";
+	      flavour = "mocha";
       };
 
       editorconfig.enable = true;

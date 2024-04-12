@@ -10,9 +10,9 @@ mkPlugin "lsp" {
       enable = true;
 
       servers = {
-	rust-analyzer.enable = true;
-	rust-analyzer.installRustc = true;
-	rust-analyzer.installCargo = true;
+	      rust-analyzer.enable = true;
+	      rust-analyzer.installRustc = true;
+	      rust-analyzer.installCargo = true;
 
  	pyright = {
           enable = true;

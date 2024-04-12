@@ -26,7 +26,7 @@
      let
        lib = inputs.snowfall-lib.mkLib {
          # You must provide our flake inputs to Snowfall Lib.
-	 inherit inputs;
+	       inherit inputs;
 
          # The `src` must be the root of the flake. See configuration
          # in the next section for information on how you can move your
@@ -44,12 +44,16 @@
          };
        };
      in lib.mkFlake {
-	 nixvimModules = lib.snowfall.module.create-modules {
-           src = "${./modules/nixvim}";
-       	 };
+       channels-config = {
+         allowUnfree = true;
+       };
 
-	 overlays = with inputs; [
+	     nixvimModules = lib.snowfall.module.create-modules {
+         src = "${./modules/nixvim}";
+       };
+
+	     overlays = with inputs; [
            nixvim.overlays.default
          ];
-     };
+       };
 }
