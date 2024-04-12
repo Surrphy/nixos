@@ -50,6 +50,7 @@ with lib.minuszero; {
 
     desktop.qtile = {
       enable = true;
+      dpi = 196;
     };
   };
 
