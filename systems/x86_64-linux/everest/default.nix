@@ -37,6 +37,10 @@ with lib.minuszero; {
       audio.enable = true;
     };
 
+    security = {
+      doas.enable = true;
+    };
+
     system = {
       fonts.enable = true;
       locale.enable = true;
