@@ -14,6 +14,8 @@
 	flavour = "mocha";
     };
 
+    plugins.luasnip.enable = true;
+
     plugins.lsp = {
       enable = true;
       servers = {
@@ -22,6 +24,7 @@
 	rust-analyzer.installCargo = true;
 
 	pyright.enable = true;
+	clangd.enable = true;
       };
     };
 
@@ -37,7 +40,7 @@
               ['<C-Space>'] = cmp.mapping.complete(),
               ['<C-e>'] = cmp.mapping.close(),
               ['<CR>'] = cmp.mapping.confirm({ select = false }),
-	      ["<Tab>"] = cmp.mapping(function(fallback)
+	      ["<C-j>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
 			elseif luasnip.expand_or_jumpable() then
@@ -47,7 +50,7 @@
 			end
 		end, {"i", "s"}),
 
-		["<S-Tab>"] = cmp.mapping(function(fallback)
+		["<C-k>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_prev_item()
 			elseif luasnip.jumpable(-1) then
