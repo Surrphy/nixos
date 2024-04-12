@@ -14,6 +14,11 @@ with lib.minuszero; {
       tmux.enable = true;
     };
 
+    apps = {
+      vesktop.enable = true;
+      nixvim.enable = true;
+    };
+
     user = {
       enable = true;
       userName = "surrphy";
@@ -24,6 +29,11 @@ with lib.minuszero; {
     tools = {
       k8s.enable = true;
       git.enable = true;
+    };
+
+    hardware = {
+      networking.enable = true;
+      audio.enable = true;
     };
 
     system = {

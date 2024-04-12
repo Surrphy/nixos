@@ -10,7 +10,7 @@
     };
 
     nixvim = {
-      url = "github:nix-community/nixvim";
+      url = "github:pta2002/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -38,7 +38,12 @@
               title = "Minus Zero";
             };
 
+            metadata = "minuszero";
             namespace = "minuszero";
          };
+
+         systems.modules.nixos = with inputs; [
+           home-manager.nixosModules.home-manager
+         ];
      };
 }
