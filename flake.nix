@@ -10,7 +10,7 @@
     };
 
     nixvim = {
-      url = "github:pta2002/nixvim";
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -23,9 +23,10 @@
   };
 
    outputs = inputs:
-     inputs.snowfall-lib.mkFlake {
+     let
+       lib = inputs.snowfall-lib.mkLib {
          # You must provide our flake inputs to Snowfall Lib.
-         inherit inputs;
+	 inherit inputs;
 
          # The `src` must be the root of the flake. See configuration
          # in the next section for information on how you can move your
@@ -41,9 +42,14 @@
             metadata = "minuszero";
             namespace = "minuszero";
          };
+       };
+     in lib.mkFlake {
+	 nixvimModules = lib.snowfall.module.create-modules {
+           src = "${./modules/nixvim}";
+       	 };
 
-         systems.modules.nixos = with inputs; [
-           home-manager.nixosModules.home-manager
+	 overlays = with inputs; [
+           nixvim.overlays.default
          ];
      };
 }

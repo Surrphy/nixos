@@ -16,7 +16,7 @@ with lib.minuszero; {
 
     apps = {
       vesktop.enable = true;
-      nixvim.enable = true;
+      neovim.enable = true;
     };
 
     user = {
@@ -40,6 +40,7 @@ with lib.minuszero; {
       fonts.enable = true;
       locale.enable = true;
       time.enable = true;
+      boot.enable = true;
     };
 
     desktop.qtile = {
