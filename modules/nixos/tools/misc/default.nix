@@ -25,6 +25,7 @@ in {
       wget
       glow
       gcc
+      pcmanfm
     ];
   };
 }
