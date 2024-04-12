@@ -16,13 +16,11 @@ mkPlugin "lsp" {
 
  	pyright = {
           enable = true;
-	  extraOptions = {
- 	    pyright.disableOrganizeImports = true;
-	    python.analysis.ignore = [ "*" ];
-	  };
 	};
+
+	clangd.enable = true;
 	
-	ruff-lsp.enable = true;
+	# ruff-lsp.enable = true;
       };
     };
 

@@ -29,6 +29,7 @@ with lib.minuszero; {
     tools = {
       k8s.enable = true;
       git.enable = true;
+      misc.enable = true;
     };
 
     hardware = {
