@@ -17,6 +17,9 @@ with lib.minuszero; {
     apps = {
       vesktop.enable = true;
       neovim.enable = true;
+      steam.enable = true;
+      lutris.enable = true;
+      heroic.enable = true;
     };
 
     user = {
