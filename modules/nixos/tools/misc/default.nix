@@ -16,6 +16,8 @@ in {
   config = mkIf cfg.enable {
     minuszero.home.configFile."wgetrc".text = "";
 
+    documentation.dev.enable = true;
+
     environment.systemPackages = with pkgs; [
       fzf
       killall
@@ -26,6 +28,9 @@ in {
       glow
       gcc
       pcmanfm
+      openvpn
+      man-pages
+      man-pages-posix
     ];
   };
 }
