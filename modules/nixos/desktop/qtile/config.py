@@ -75,7 +75,7 @@ keys = [
     Key([mod], "f", lazy.spawn(browser), desc="Run web browser"),
     Key([mod], "s", lazy.spawn("scrot -f -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'"), desc="Take screenshot"),
     Key([mod, "shift"], 'space', lazy.next_screen(), desc='Change focus to next monitor'),
-    Key([mod], "f",
+    Key([mod, "shift"], "f",
         lazy.window.toggle_fullscreen(),
         desc="Toggle fullscreen",
     ),
