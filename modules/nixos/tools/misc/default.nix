@@ -31,6 +31,9 @@ in {
       openvpn
       man-pages
       man-pages-posix
+      python3
+      gef
+      prismlauncher
     ];
   };
 }
