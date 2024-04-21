@@ -19,6 +19,7 @@ mkPlugin "telescope" {
     (nmap "<C-p>" "<cmd>Telescope find_files<CR>")
     (nmap "<C-f>" "<cmd>Telescope live_grep<CR>")
     (nmap "<Leader><Tab>" "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>")
+    (nmap "<Leader>b" "<cmd>Telescope buffers<CR>")
   ];
 
   plugins.telescope = {
