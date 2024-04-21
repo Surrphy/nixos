@@ -13,18 +13,18 @@ in {
     enable = mkEnableOption "enable user module";
 
     userName = mkOption {
-	default = "main-user";
-	description = ''Username'';
+	    default = "main-user";
+	    description = ''Username'';
     };
 
     fullName = mkOption {
-	default = "Main User";
-	description = ''Full name'';
+	    default = "Main User";
+	    description = ''Full name'';
     };
 
     email = mkOption {
-        default = "mainuser@example.com";
-	description = ''User's email'';
+      default = "mainuser@example.com";
+	    description = ''User's email'';
     };
 
   };

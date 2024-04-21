@@ -52,6 +52,10 @@ with lib.minuszero; {
       boot.enable = true;
     };
 
+    virtualisation = {
+      podman.enable = true;
+    };
+
     desktop.qtile = {
       enable = true;
       dpi = 196;
