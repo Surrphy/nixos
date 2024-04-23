@@ -34,6 +34,8 @@ in {
       python3
       gef
       prismlauncher
+      postgresql
+      httpie
     ];
   };
 }

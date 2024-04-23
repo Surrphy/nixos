@@ -5,6 +5,7 @@
 mkShell {
   packages = with pkgs; [
     poetry
+    openldap
   ];
 
   shellHook = ''
