@@ -6,6 +6,7 @@ mkShell {
   packages = with pkgs; [
     poetry
     openldap
+    cyrus_sasl
   ];
 
   shellHook = ''

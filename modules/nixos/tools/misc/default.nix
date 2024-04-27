@@ -36,6 +36,10 @@ in {
       prismlauncher
       postgresql
       httpie
+      obs-studio
+      mpv
+      ani-cli
+      youtube-dl
     ];
   };
 }
