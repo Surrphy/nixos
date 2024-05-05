@@ -40,6 +40,7 @@ in {
       mpv
       ani-cli
       youtube-dl
+      bun
     ];
   };
 }
