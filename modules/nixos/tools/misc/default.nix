@@ -41,6 +41,8 @@ in {
       ani-cli
       youtube-dl
       bun
+      nushell
+      virt-manager
     ];
   };
 }
