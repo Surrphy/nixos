@@ -18,6 +18,8 @@ in {
 
     documentation.dev.enable = true;
 
+    services.zerotierone.enable = true;
+
     environment.systemPackages = with pkgs; [
       fzf
       killall
