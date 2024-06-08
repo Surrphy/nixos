@@ -45,6 +45,7 @@ in {
       bun
       nushell
       virt-manager
+      vulkan-tools
     ];
   };
 }

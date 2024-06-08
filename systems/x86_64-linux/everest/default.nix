@@ -50,6 +50,7 @@ with lib.minuszero; {
       locale.enable = true;
       time.enable = true;
       boot.enable = true;
+      nix-ld.enable = true;
     };
 
     virtualisation = {
